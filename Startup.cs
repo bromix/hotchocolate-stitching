@@ -16,7 +16,8 @@ namespace hotchocolate_stitching
         
             services
                 .AddGraphQLServer()
-                .AddRemoteSchema("almansi");
+                .AddRemoteSchema("almansi")
+                .AddQueryType<Query>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
